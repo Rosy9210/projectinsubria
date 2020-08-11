@@ -2,11 +2,14 @@ package it.uninsubria.pdm.trovaprezzi;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 
 public class MainActivity extends AppCompatActivity {
     TextView risultato;
@@ -21,6 +24,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void scatta(View view) {
+
         Log.d ( "scattafoto", "Trova Prezzo");
+        Intent cameraIntent = new Intent ( MediaStore.ACTION_IMAGE_CAPTURE);
+        startActivity(cameraIntent);
     }
+
 }
