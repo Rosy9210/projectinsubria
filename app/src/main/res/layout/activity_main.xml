@@ -29,17 +29,17 @@
         android:text="@string/search_your_product"
         android:textColor="@android:color/background_dark"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintBottom_toTopOf="@+id/scanBarCode"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toTopOf="@+id/guideline3" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/scanBarCode"
         android:layout_width="140dp"
         android:layout_height="109dp"
         android:contentDescription="@string/camera"
-        android:onClick="scatta"
+        android:onClick="scanBarcode"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintHorizontal_bias="0.507"
@@ -49,14 +49,14 @@
 
     <TextView
         android:id="@+id/tvrisultato"
-        android:layout_width="184dp"
-        android:layout_height="80dp"
+        android:layout_width="254dp"
+        android:layout_height="139dp"
         android:hint="@string/your_price"
         android:textSize="36sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintTop_toBottomOf="@+id/scanBarCode" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"
