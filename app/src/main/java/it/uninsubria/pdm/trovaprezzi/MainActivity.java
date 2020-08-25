@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
                     Barcode barcode = data.getParcelableExtra ( "barcode" );
                     readbarcode=barcode.displayValue;
                     DownloadTask task= new DownloadTask ();
-                    task.execute ( "https://api.barcodelookup.com/v2/products?barcode=" + readbarcode + "&formatted=y&key=93gh1g0x64k840ctbnuiff7klzze40");
+                    task.execute ( "https://api.barcodelookup.com/v2/products?barcode=" + readbarcode + "&formatted=y&key=uib5sgx0puls4twxs6b7e2eg8felpg");
                     tvrisultato.setText ( outputprod );
                 } else {
                     super.onActivityResult ( RequestCode, ResultCode, data );
