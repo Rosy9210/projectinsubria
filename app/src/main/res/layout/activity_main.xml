@@ -49,8 +49,8 @@
 
     <TextView
         android:id="@+id/tvrisultato"
-        android:layout_width="254dp"
-        android:layout_height="139dp"
+        android:layout_width="267dp"
+        android:layout_height="205dp"
         android:gravity="center"
         android:hint="@string/your_price"
         android:textSize="24sp"
